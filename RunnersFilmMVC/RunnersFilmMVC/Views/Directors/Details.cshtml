@@ -1,0 +1,73 @@
+﻿@model RunnersFilmMVC.Models.Director
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Director</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Director
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Films)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Film Name</th>
+                    <th>Genre</th>
+                </tr>
+                @foreach (var item in Model.Films)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Movie)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Genre.genre)
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DirectorId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

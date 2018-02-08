@@ -1,0 +1,23 @@
+﻿.jumbotron {
+    background-image: url('BlackPan.jpg');
+    color:cyan;
+    background-attachment: fixed;
+    min-height: 380px;
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+
+.Image {
+    background-image: url('movie-review-space-between-us-759.jpg');
+     color:cyan;
+    background-attachment: fixed;
+    min-height: 380px;
+    background-size: 95% 60%;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    margin-bottom:20px;
+
+}
+
+

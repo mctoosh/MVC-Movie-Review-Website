@@ -1,0 +1,106 @@
+﻿@model PagedList.IPagedList<RunnersFilmMVC.Models.Film>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Films";
+}
+
+<h2>Films</h2>
+@*User can not acces the add link without being logged in *@
+@if (ViewBag.email != "not logged in")
+{
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+}
+@*Adds the search box *@
+@using (Html.BeginForm("Index", "Films", FormMethod.Get))
+{
+    <p>
+        Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            Actor
+        </th>
+        <th>
+            Director
+        </th>
+        <th>
+            Genre
+        </th>
+        <th>
+           @Html.ActionLink("Movie", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th>
+            Year
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Duration
+        </th>
+        <th>
+            @Html.ActionLink("Rating", "Index", new { sortOrder = ViewBag.NumSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Actor.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Director.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Genre.genre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Movie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Duration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rating)
+        </td>
+        @*User can not acces the add link without being logged in *@
+        <td>
+           @if (ViewBag.email != "not logged in")
+           {
+
+            @Html.ActionLink("Edit", "Edit", new { id = item.FilmId })
+           }
+
+            @Html.ActionLink("Details", "Details", new { id = item.FilmId })
+
+             @if (ViewBag.email != "not logged in")
+            {
+             @Html.ActionLink("Delete", "Delete", new { id = item.FilmId })
+             }
+        </td>
+    </tr>
+}
+
+</table>
+<br />
+@*This sets up the pagings*@
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+

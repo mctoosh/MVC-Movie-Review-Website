@@ -1,0 +1,81 @@
+﻿@model PagedList.IPagedList<RunnersFilmMVC.Models.Actor>
+    @using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Actors";
+}
+
+<h2>Actors</h2>
+
+@*User can not acces the add link without being logged in *@
+@if (ViewBag.email != "not logged in")
+{
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+}
+@*Adds the search box *@
+@using (Html.BeginForm("Index", "Actors", FormMethod.Get))
+{
+    <p>
+        Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Actor", "Index", new { sortOrder = ViewBag.NameSortParm })
+        </th>
+        <th>
+            Gender
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+            Description
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        @*User can not acces the add link without being logged in *@
+        <td>
+            @if (ViewBag.email != "not logged in")
+            {
+            @Html.ActionLink("Edit", "Edit", new { id = item.ActorId }) 
+            }
+
+            @Html.ActionLink("Details", "Details", new { id=item.ActorId }) 
+
+            @if (ViewBag.email != "not logged in")
+            {
+            @Html.ActionLink("Delete", "Delete", new { id = item.ActorId })
+            }
+        </td>
+    </tr>
+}
+
+</table>
+<br/>
+@*This sets up the pagings*@
+Page @(Model.PageCount<Model.PageNumber ? 0 : Model.PageNumber) of
+@Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentfilter = ViewBag.CurrentFilter}))

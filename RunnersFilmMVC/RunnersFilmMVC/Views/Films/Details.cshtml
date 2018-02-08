@@ -1,0 +1,98 @@
+﻿@model RunnersFilmMVC.Models.Film
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Film</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Actor
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Actor.Name)
+        </dd>
+
+        <dt>
+            Director
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Director.Name)
+        </dd>
+
+        <dt>
+            Genre
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre.genre)
+        </dd>
+
+        <dt>
+            Movie
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Movie)
+        </dd>
+
+        <dt>
+            Year
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+        <dt>
+            Description
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            Duration
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+
+        <dt>
+            Rating
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Actor Names</th>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => model.Actor.Name)
+                    </td>
+                </tr>
+
+            </table>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FilmId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
