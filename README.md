@@ -1,5 +1,4 @@
 # MVC-Movie-Review-Website
-MVC-Movie-Review-Website
 
 ## My Role as a Developer
 My role in the team was a developer. My job was to assist my team mates in developing a Film review website using MVC and C#. I started off by writing on my wiki page, what my role was and what I was going to do within my team. I then started off by working on the home page of the website. I added all the links that we needed on to the navbar, I also added the name logo on to the navbar. I then moved on to adding a new stylesheet on to the home page by getting a new bootstrap theme. I then added an image on to the home page. 
