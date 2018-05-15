@@ -76,4 +76,48 @@ The user would use this page to login to the system
 
 If the user is not a member of the system, he is able to register onto the system using this page
 
+### When user is a member
 
+![image](https://user-images.githubusercontent.com/15992710/40030351-0952dc6c-57e2-11e8-95f9-e581e5743cb0.png)
+
+When the user is a member of the system, the navigation bar will display their email address
+
+![image](https://user-images.githubusercontent.com/15992710/40030612-705a1618-57e3-11e8-8de9-45745c6c3e8d.png)
+
+When the user is logged onto the system, the film page changes into this page where they are able to view more options
+
+![image](https://user-images.githubusercontent.com/15992710/40030700-ff835f7a-57e3-11e8-909a-fe31569cf011.png)
+
+On this page the user is able to add a new film onto the system
+
+![image](https://user-images.githubusercontent.com/15992710/40030726-20890904-57e4-11e8-8b5f-088f11377291.png)
+
+On this page the user is able to delete a film from the system
+
+![image](https://user-images.githubusercontent.com/15992710/40030770-5661eb18-57e4-11e8-9458-0c6959ecb76d.png)
+
+On this page the user is able to edit a film
+
+![image](https://user-images.githubusercontent.com/15992710/40030790-6e872352-57e4-11e8-81c4-9c803e382b5d.png)
+
+The is how the actor page will look once the user is logged onto the system
+
+![image](https://user-images.githubusercontent.com/15992710/40030871-d08994d6-57e4-11e8-84dd-2a126ec71bb7.png)
+
+The user is abe to add an actor onto the system using this page
+
+![image](https://user-images.githubusercontent.com/15992710/40030884-e7f16cde-57e4-11e8-96ee-73014cd8a494.png)
+
+This is how the director page will look like once the user is logged onto the system
+
+![image](https://user-images.githubusercontent.com/15992710/40030919-08e3a1fa-57e5-11e8-9658-ffb51d376259.png)
+
+The user is able to view movie reviews when the user is logged onto the system
+
+![image](https://user-images.githubusercontent.com/15992710/40030957-3e964258-57e5-11e8-87b9-9b19e7854983.png)
+
+The users are able to delete reviews on this page
+
+![image](https://user-images.githubusercontent.com/15992710/40030997-77d9fc8a-57e5-11e8-94f1-6e0775cf812e.png)
+
+On this page the user can manage his user account settings
