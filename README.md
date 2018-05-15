@@ -29,3 +29,43 @@ On the other hand, there were some problems we faced as a team. At the start of 
 If I were to start the project again I would work better with my team members, this is because when we work as a group we are less likely to make any mistakes, likewise, by working closer with my team members I would avoid the problem of having GitHub conflicts.
 
 ## ScreenShots
+
+![image](https://user-images.githubusercontent.com/15992710/40029032-2b32fd9c-57da-11e8-9d5d-a7ee925d9b89.png)
+
+When the user is not a member and visits the website, they will be redirected to this homepage
+
+![image](https://user-images.githubusercontent.com/15992710/40029151-d49e1c4a-57da-11e8-932d-34aa85cdf327.png)
+
+The users have the option to visit the about page where they are able to read furhter information about the website
+
+![image](https://user-images.githubusercontent.com/15992710/40029260-65617092-57db-11e8-81af-3c484796edaa.png)
+
+When the user is not a member, he is only able to view the film page. On this page, the user is able to sort the order of Movies and the ratings of the movie as well. 
+
+![image](https://user-images.githubusercontent.com/15992710/40029338-fea4c312-57db-11e8-8cdb-c4187117e1ee.png)
+
+The user is able to search the name of the movie and also the genre names as well
+
+![image](https://user-images.githubusercontent.com/15992710/40029424-7d0791f8-57dc-11e8-8ea4-c2114647f4a1.png)
+
+The user is able to view the details of the movie, as well as the actors that are in the movie.
+
+![image](https://user-images.githubusercontent.com/15992710/40029650-973f7e68-57dd-11e8-9980-5a1e66308ece.png)
+
+The users are able to visit the actors page, on this page they can view the actors when they are not logged in
+
+![image](https://user-images.githubusercontent.com/15992710/40029759-24d4feb0-57de-11e8-8879-37293aa5127e.png)
+
+The users are able to visit the directors page, on this page they can view the directors when they are not logged in
+
+![image](https://user-images.githubusercontent.com/15992710/40029916-20bfa41e-57df-11e8-9d1e-52bae904efea.png)
+
+The users would need to be logged into the system to be able to view any reviews
+
+![image](https://user-images.githubusercontent.com/15992710/40029942-4eca4792-57df-11e8-9cf0-7ad3db761f53.png)
+
+The user could use this page to contact us
+
+![image](https://user-images.githubusercontent.com/15992710/40029985-a4f4a19e-57df-11e8-97f0-03c4e923cd8f.png)
+
+
