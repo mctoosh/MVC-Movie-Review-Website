@@ -30,6 +30,8 @@ If I were to start the project again I would work better with my team members, t
 
 ## ScreenShots
 
+### When user is not a member
+
 ![image](https://user-images.githubusercontent.com/15992710/40029032-2b32fd9c-57da-11e8-9d5d-a7ee925d9b89.png)
 
 When the user is not a member and visits the website, they will be redirected to this homepage
@@ -62,10 +64,16 @@ The users are able to visit the directors page, on this page they can view the d
 
 The users would need to be logged into the system to be able to view any reviews
 
-![image](https://user-images.githubusercontent.com/15992710/40029942-4eca4792-57df-11e8-9cf0-7ad3db761f53.png)
+![image](https://user-images.githubusercontent.com/15992710/40030052-2546d8a8-57e0-11e8-8808-ef0c4a9dde92.png)
 
 The user could use this page to contact us
 
-![image](https://user-images.githubusercontent.com/15992710/40029985-a4f4a19e-57df-11e8-97f0-03c4e923cd8f.png)
+![image](https://user-images.githubusercontent.com/15992710/40030062-41b3c4ce-57e0-11e8-9bf0-cbb931d3d827.png)
+
+The user would use this page to login to the system
+
+![image](https://user-images.githubusercontent.com/15992710/40030136-cc53122e-57e0-11e8-8950-02db615115b8.png)
+
+If the user is not a member of the system, he is able to register onto the system using this page
 
 
